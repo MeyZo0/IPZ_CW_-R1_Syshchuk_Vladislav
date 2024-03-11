@@ -51,7 +51,7 @@ fun MainWindow(modifier: Modifier = Modifier) {
         Box(
             modifier = Modifier
 
-                .padding(bottom = 15.dp, top = 48.dp, end = 22.dp, start = 0.dp)
+                .padding(top = 48.dp, start = 100.dp)
         ) {
             Image(
                 painter = painterResource(R.drawable.images),
@@ -60,20 +60,37 @@ fun MainWindow(modifier: Modifier = Modifier) {
                     .size(200.dp)
                     .clip(RoundedCornerShape(50.dp))
 
-
             )
         }
         Text(
             text = "Jennifer Doe",
             fontSize = 36.sp,
-            modifier = Modifier.padding(start = 12.dp, bottom = 5.dp)
+            modifier = Modifier.padding(start = 100.dp, bottom = 5.dp)
         )
         Text(
             text = "Android Developer Extraordinaire",
             fontSize = 15.sp,
-            modifier = Modifier.padding(start = 12.dp, bottom = 40.dp)
+            color = Color.Green,
+            modifier = Modifier.padding(start = 100.dp, bottom = 200.dp)
         )
-        
+        Text(
+            text = "+11 (123) 444 555 666",
+            fontSize = 20.sp,
+            color = Color.Green,
+            modifier = Modifier.padding(start = 100.dp, bottom = 10.dp)
+        )
+        Text(
+            text = "@AndroidDev",
+            fontSize = 20.sp,
+            color = Color.Green,
+            modifier = Modifier.padding(start = 100.dp, bottom = 10.dp)
+        )
+        Text(
+            text = "jen.doe@android.com",
+            fontSize = 20.sp,
+            color = Color.Green,
+            modifier = Modifier.padding(start = 100.dp, bottom = 10.dp)
+        )
 
     }
 }
